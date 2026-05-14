@@ -1,0 +1,107 @@
+const directors = [
+    { category: '1950s - 1960s', items: [
+        { id: 'kubrick', surname: 'KUBRICK', nameJa: 'スタンリー・キューブリック', nameEn: 'STANLEY KUBRICK' }
+    ]},
+    { category: '1970s - 1980s', items: [
+        { id: 'lucas', surname: 'LUCAS', nameJa: 'ジョージ・ルーカス', nameEn: 'GEORGE LUCAS' },
+        { id: 'spielberg', surname: 'SPIELBERG', nameJa: 'スティーヴン・スピルバーグ', nameEn: 'STEVEN SPIELBERG' },
+        { id: 'scorsese', surname: 'SCORSESE', nameJa: 'マーティン・スコセッシ', nameEn: 'MARTIN SCORSESE' },
+        { id: 'lynch', surname: 'LYNCH', nameJa: 'デヴィッド・リンチ', nameEn: 'DAVID LYNCH' },
+        { id: 'bigelow', surname: 'BIGELOW', nameJa: 'キャスリン・ビグロー', nameEn: 'KATHRYN BIGELOW' }
+    ]},
+    { category: '1990s - 2000s', items: [
+        { id: 'coen', surname: 'COENS', nameJa: 'ジョエル＆イーサン・コーエン', nameEn: 'JOEL & ETHAN COEN' },
+        { id: 'burton', surname: 'BURTON', nameJa: 'ティム・バートン', nameEn: 'TIM BURTON' },
+        { id: 'fincher', surname: 'FINCHER', nameJa: 'デイヴィッド・フィンチャー', nameEn: 'DAVID FINCHER' },
+        { id: 'tarantino', surname: 'TARANTINO', nameJa: 'クエンティン・タランティーノ', nameEn: 'QUENTIN TARANTINO' },
+        { id: 'anderson', surname: 'ANDERSON', nameJa: 'ウェス・アンダーソン', nameEn: 'WES ANDERSON' },
+        { id: 'nolan', surname: 'NOLAN', nameJa: 'クリストファー・ノーラン', nameEn: 'CHRISTOPHER NOLAN' },
+        { id: 'villeneuve', surname: 'VILLENEUVE', nameJa: 'ドゥニ・ヴィルヌーヴ', nameEn: 'DENIS VILLENEUVE' },
+        { id: 'wachowskis', surname: 'WACHOWSKIS', nameJa: 'ラナ＆リリー・ウォシャウスキー', nameEn: 'THE WACHOWSKIS' }
+    ]},
+    { category: '2010s - 2020s', items: [
+        { id: 'gerwig', surname: 'GERWIG', nameJa: 'グレタ・ガーウィグ', nameEn: 'GRETA GERWIG' },
+        { id: 'chazelle', surname: 'CHAZELLE', nameJa: 'デイミアン・チャゼル', nameEn: 'DAMIEN CHAZELLE' },
+        { id: 'peele', surname: 'PEELE', nameJa: 'ジョーダン・ピール', nameEn: 'JORDAN PEELE' },
+        { id: 'aster', surname: 'ASTER', nameJa: 'アリ・アスター', nameEn: 'ARI ASTER' }
+    ]}
+];
+
+let selectedDirectors = [];
+
+function renderList() {
+    const container = document.getElementById('director-grid');
+    container.className = 'director-list';
+    container.innerHTML = '';
+
+    let globalIndex = 1;
+
+    directors.forEach(group => {
+        // Render Category Header
+        const header = document.createElement('div');
+        header.className = 'director-category-title';
+        header.textContent = group.category;
+        container.appendChild(header);
+
+        // Render Directors in Group
+        group.items.forEach(dir => {
+            const item = document.createElement('div');
+            const displayIndex = globalIndex.toString().padStart(2, '0');
+            item.className = `director-item ${selectedDirectors.includes(dir.id) ? 'selected' : ''}`;
+            item.innerHTML = `
+                <div class="item-index">${displayIndex}</div>
+                <div class="item-name-ja">${dir.nameJa}</div>
+                <div class="item-name-en">${dir.nameEn}</div>
+            `;
+            item.onclick = () => toggleSelection(dir.id);
+            container.appendChild(item);
+            globalIndex++;
+        });
+    });
+}
+
+function toggleSelection(id) {
+    const index = selectedDirectors.indexOf(id);
+    if (index > -1) {
+        selectedDirectors.splice(index, 1);
+    } else {
+        if (selectedDirectors.length < 2) {
+            selectedDirectors.push(id);
+        } else {
+            // 3人目は選ばせず、2人まで
+            selectedDirectors.shift();
+            selectedDirectors.push(id);
+        }
+    }
+    
+    updateUI();
+}
+
+function updateUI() {
+    renderList();
+    const btn = document.getElementById('compare-btn');
+    const allItems = directors.flatMap(g => g.items);
+
+    if (selectedDirectors.length === 1) {
+        const d1 = allItems.find(d => d.id === selectedDirectors[0]);
+        btn.textContent = `${d1.nameJa} の作品年表を見る`;
+        btn.classList.add('visible');
+    } else if (selectedDirectors.length === 2) {
+        const names = selectedDirectors.map(id => allItems.find(d => d.id === id).nameJa);
+        btn.textContent = `${names[0]} と ${names[1]} を比較する`;
+        btn.classList.add('visible');
+    } else {
+        btn.classList.remove('visible');
+    }
+}
+
+document.getElementById('compare-btn').onclick = () => {
+    if (selectedDirectors.length >= 1) {
+        const d1 = selectedDirectors[0];
+        const d2 = selectedDirectors[1] || '';
+        window.location.href = `timeline.html?d1=${d1}${d2 ? `&d2=${d2}` : ''}`;
+    }
+};
+
+// Initial Render
+renderList();
