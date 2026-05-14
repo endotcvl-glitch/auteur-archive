@@ -33,7 +33,7 @@ const filmsData = [
     { year: 1960, type: 'kubrick', title: "スパルタカス", context: "古代ローマを舞台に、奴隷たちの反乱を壮大に描いた歴史大作。" },
     { year: 1962, type: 'kubrick', title: "ロリータ", context: "中年男性と少女の倒錯した愛を描いた、ナボコフの同名小説の映画化。" },
     { year: 1964, type: 'kubrick', title: "博士の異常な愛情", context: "核戦争を題材に、冷戦下の政治と狂気を皮肉ったブラックコメディ。" },
-    { year: 1968, type: 'kubrick', title: "2001年宇宙の旅", context: "人類の進化と宇宙の神秘を描いた、SF映画의 金字塔。" },
+    { year: 1968, type: 'kubrick', title: "2001年宇宙の旅", context: "人類の進化と宇宙の神秘を描いた、SF映画の金字塔。" },
     { year: 1971, type: 'kubrick', title: "時計じかけのオレンジ", context: "近未来を舞台に、暴力と洗脳をめぐる人間の本質を問う衝撃作。" },
     { year: 1975, type: 'kubrick', title: "バリー・リンドン", context: "18世紀のヨーロッパを舞台に、一人の男の成り上がりと没落を描いた歴史劇。" },
     { year: 1980, type: 'kubrick', title: "シャイニング", context: "雪山のホテルを舞台にした、恐怖の心理的描写が際立つホラー映画。" },
@@ -114,7 +114,7 @@ const filmsData = [
 
     // Christopher Nolan
     { year: 1998, type: 'nolan', title: "フォロウィング", context: "時間軸を解体する手法の原点。" },
-    { year: 2000, type: 'nolan', title: "メメント", context: "10分しか記憶が持たない男ের 逆行する時間。" },
+    { year: 2000, type: 'nolan', title: "メメント", context: "10分しか記憶が持たない男の逆行する時間。" },
     { year: 2002, type: 'nolan', title: "インソムニア", context: "不眠症に苛まれる刑事の倫理的境界。" },
     { year: 2005, type: 'nolan', title: "バットマン ビギンズ", context: "ヒーローを現実の恐怖と結びつける。" },
     { year: 2006, type: 'nolan', title: "プレステージ", context: "マジシャン同士の執念と自己犠牲。" },
@@ -195,13 +195,13 @@ const filmsData = [
     { year: 1995, type: 'scorsese', title: "カジノ", context: "ラスベガスの支配と、人間の強欲な崩壊。" },
     { year: 1997, type: 'scorsese', title: "クンドゥン", context: "ダライ・ラマ14世の若き日の軌跡とチベットの苦難。" },
     { year: 1999, type: 'scorsese', title: "救命士", context: "夜の街を駆け抜ける救急救命士の、極限の精神状態。" },
-    { year: 2002, type: 'scorsese', title: "ギャング・オブ・ニューヨーク", context: "ニューヨークの血塗られた誕生の歴史。" },
-    { year: 2004, type: 'scorsese', title: "アびエイター", context: "ハワード・ヒューズの野望と病的なまでの完璧主義。" },
+    { year: 2002, type: 'scorsese', title: "ギャング・オブ_ニューヨーク", context: "ニューヨークの血塗られた誕生の歴史。" },
+    { year: 2004, type: 'scorsese', title: "アビエイター", context: "ハワード・ヒューズの野望と病的なまでの完璧主義。" },
     { year: 2005, type: 'scorsese', title: "ボブ・ディラン ノー・ディレクション・ホーム", context: "ディランの若き日の苦悩と変遷を描く傑作ドキュメンタリー。" },
     { year: 2006, type: 'scorsese', title: "ディパーテッド", context: "裏切りと欺瞞。ネズミたちのデスゲーム。" },
     { year: 2008, type: 'scorsese', title: "シャイン・ア・ライト", context: "ローリング・ストーンズのライブを極上の映像で捉える。" },
     { year: 2010, type: 'scorsese', title: "シャッター アイランド", context: "孤島の精神病院で消えた囚人。謎が謎を呼ぶスリラー。" },
-    { year: 2011, type: 'scorsese', title: "ジョージ・ハリスン/リヴィング・イン・ザ-マテリアル・ワールド", context: "ジョージの魂の遍歴を辿るドキュメンタリー。" },
+    { year: 2011, type: 'scorsese', title: "ジョージ・ハリスン/リヴィング・イン・ザ・マテリアル・ワールド", context: "ジョージの魂の遍歴を辿るドキュメンタリー。" },
     { year: 2011, type: 'scorsese', title: "ヒューゴの不思議な発明", context: "映画の創成期へのオマージュを込めたファンタジー。" },
     { year: 2013, type: 'scorsese', title: "ウルフ・オブ・ウォールストリート", context: "狂乱の金、ドラッグ、飽くなき野心の喜劇。" },
     { year: 2016, type: 'scorsese', title: "沈黙 -サイレンス-", context: "隠れキリシタンの苦悩と、神の沈黙への問い。" },
@@ -282,7 +282,7 @@ const filmsData = [
     { year: 1998, type: 'miller', title: "ベイブ/都会へ行く", context: "都会へと迷い込んだ子ブタの冒険を描く、ダークなファンタジー。" },
     { year: 2006, type: 'miller', title: "ハッピー フィート", context: "歌えないがダンスが得意なペンギンの、勇気ある冒険。" },
     { year: 2011, type: 'miller', title: "ハッピー フィート2", context: "ペンギンたちの危機を救うべく、再びダンスで立ち上がる。" },
-    { year: 2015, type: 'miller', title: "マッドマックス 怒りのデス・ロード", context: "狂気の世界でのノンストップ・アクション。映画表現の新地平。" },
+    { year: 2015, type: 'miller', title: "マッドマックス 怒りのデス・ロード", context: "狂気の世界でのノンストップ・アクション. 映画表現の新地平。" },
     { year: 2022, type: 'miller', title: "アラビアンナイト 三千年の願い", context: "学者と魔人の対話を通じ、物語と欲望の正体を問う。" },
     { year: 2024, type: 'miller', title: "マッドマックス：フュリオサ", context: "若きフュリオサの、怒りと復讐に満ちた原点の物語。" },
 
@@ -298,7 +298,7 @@ const filmsData = [
 
     // Ryan Coogler
     { year: 2013, type: 'coogler', title: "フルートベール駅で", context: "理不尽に命を奪われた青年の、最後の一日を克明に描く。" },
-    { year: 2015, type: 'coogler', title: "クリード チャンプを継る男", context: "『ロッキー』の魂を継承し、新たな伝説を創り出した傑作。" },
+    { year: 2015, type: 'coogler', title: "クリード チャンプを継ぐ男", context: "『ロッキー』の魂を継承し、新たな伝説を創り出した傑作。" },
     { year: 2018, type: 'coogler', title: "ブラックパンサー", context: "文化、アイデンティティ、正義を問う、MCUの金字塔。" },
     { year: 2022, type: 'coogler', title: "ブラックパンサー/ワカンダ・フォーエバー", context: "喪失を乗り越え、国と伝統を守る者たちの闘い。" },
     { year: 2025, type: 'coogler', title: "シナーズ", context: "1930年代アメリカ南部を舞台にした、漆黒のスーパーナチュラル・ホラー。" },
@@ -325,3 +325,224 @@ const filmsData = [
     { year: 2019, type: 'aster', title: "ミッドサマー", context: "白夜の村で繰り広げられる、美しき狂信の祝祭。" },
     { year: 2023, type: 'aster', title: "ボーはおそれている", context: "母親の元へ帰るだけの、壮大で悪夢のような旅。" }
 ];
+
+const episodesData = {
+    1954: "『ゴジラ』公開 特撮映画の金字塔",
+    1957: "スプートニク1号打ち上げ 宇宙時代の幕開け",
+    1961: "ガガーリン 世界初の有人宇宙飛行",
+    1963: "ケネディ大統領暗殺事件",
+    1964: "東京オリンピック開催",
+    1969: "アポロ11号月面着陸",
+    1973: "第1次オイルショック",
+    1975: "『ジョーズ』公開 ブロックバスター映画の誕生",
+    1977: "ILM設立 / 『スター・ウォーズ』公開",
+    1979: "ウォークマン発売",
+    1981: "MTV放送開始",
+    1985: "レンタルビデオ普及",
+    1986: "チェルノブイリ原発事故",
+    1989: "ベルリンの壁崩壊",
+    1991: "『ターミネーター2』公開 デジタル技術の躍進",
+    1993: "『ジュラシック・パーク』公開 CGIの衝撃",
+    1995: "インターネット普及開始",
+    1999: "『マトリックス』公開 映像表現の革命",
+    2001: "9.11同時多発テロ",
+    2005: "YouTubeスタート",
+    2007: "iPhone発売 / Netflix配信開始",
+    2008: "リーマン・ショック / MCUスタート",
+    2009: "『アバター』公開 3D映画の再定義",
+    2011: "東日本大震災",
+    2013: "Netflix自社制作開始",
+    2015: "『マッドマックス 怒りのデス・ロード』公開",
+    2017: "#MeToo運動",
+    2020: "COVID-19パンデミック",
+    2022: "生成AIの爆発的普及",
+    2023: "ハリウッド大規模スト",
+    2024: "Apple Vision Pro発売"
+};
+
+function getUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        d1: params.get('d1') || 'nolan',
+        d2: params.get('d2') || null // Allow null for single view
+    };
+}
+
+function updateHeaderLabels(d1Id, d2Id) {
+    const d1Info = directorsInfo[d1Id] || directorsInfo['nolan'];
+    const d2Info = d2Id ? directorsInfo[d2Id] : null;
+
+    const labels = document.querySelectorAll('.label');
+    if (labels.length < 1) return;
+
+    // Left Label
+    labels[0].innerHTML = `<div class="label-surname">${d1Info.surname || d1Info.fullNameEn}</div><div class="label-ja">${d1Info.nameJa}</div>`;
+
+    // Right Label
+    if (labels.length > 1) {
+        if (d2Info) {
+            labels[1].style.display = 'block';
+            labels[1].innerHTML = `<div class="label-surname">${d2Info.surname || d2Info.fullNameEn}</div><div class="label-ja">${d2Info.nameJa}</div>`;
+        } else {
+            labels[1].style.display = 'block';
+            labels[1].innerHTML = `<div class="label-en">CONTEMPORARIES</div><div class="label-ja">同時代の作家たち</div>`;
+        }
+    }
+}
+
+function jumpTo(year) {
+    let el = document.getElementById(`year-${year}`);
+    // If specific year not found, find the first available year after it
+    if (!el) {
+        for (let y = year; y <= 2026; y++) {
+            el = document.getElementById(`year-${y}`);
+            if (el) break;
+        }
+    }
+    
+    if (el) {
+        const offset = 200; // Account for sticky header and jump-nav
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = el.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+}
+
+function renderTimeline() {
+    const { d1, d2 } = getUrlParams();
+    updateHeaderLabels(d1, d2);
+
+    const container = document.getElementById('timeline-container');
+    const labels = document.querySelector('.director-labels');
+    container.innerHTML = '';
+
+    // Handle single mode styling
+    if (!d2) {
+        container.classList.add('single-mode');
+        if (labels) labels.classList.add('single-mode');
+    } else {
+        container.classList.remove('single-mode');
+        if (labels) labels.classList.remove('single-mode');
+    }
+    // Calculate dynamic start year based on directors' debut
+    const d1Debut = filmsData.find(f => f.type === d1)?.year || 1953;
+    const d2Debut = d2 ? (filmsData.find(f => f.type === d2)?.year || Infinity) : Infinity;
+    const debutYear = Math.min(d1Debut, d2Debut);
+    
+    // Set start year to debut year, but not earlier than our absolute floor
+    const startYear = Math.max(1953, debutYear);
+    const endYear = 2025;
+    const currentYear = 2026; 
+
+    // Update jump nav visibility based on start year
+    document.querySelectorAll('.jump-nav button').forEach(btn => {
+        const onclickAttr = btn.getAttribute('onclick');
+        if (onclickAttr) {
+            const match = onclickAttr.match(/\d+/);
+            if (match) {
+                const jumpYear = parseInt(match[0]);
+                if (jumpYear < Math.floor(startYear / 10) * 10) {
+                    btn.style.display = 'none';
+                } else {
+                    btn.style.display = 'inline-block';
+                }
+            }
+        }
+    });
+
+    // Add 50s/60s buttons if needed
+    const jumpNav = document.querySelector('.jump-nav');
+    if (startYear < 1960 && !document.getElementById('jump-1950')) {
+        const btn50 = document.createElement('button');
+        btn50.id = 'jump-1950';
+        btn50.textContent = '50s';
+        btn50.onclick = () => jumpTo(1950);
+        jumpNav.prepend(btn50);
+    }
+    if (startYear < 1970 && !document.getElementById('jump-1960')) {
+        const btn60 = document.createElement('button');
+        btn60.id = 'jump-1960';
+        btn60.textContent = '60s';
+        btn60.onclick = () => jumpTo(1960);
+        // Insert after 50s if it exists
+        const btn50 = document.getElementById('jump-1950');
+        if (btn50) {
+            btn50.after(btn60);
+        } else {
+            jumpNav.prepend(btn60);
+        }
+    }
+
+    // Add future/now highlight
+    for (let year = startYear; year <= currentYear; year++) {
+        const row = document.createElement('div');
+        const isNow = year === currentYear;
+        row.className = `timeline-row ${isNow ? 'is-current' : ''}`;
+        row.id = `year-${year}`;
+
+        const filmLeft = filmsData.find(f => f.year === year && f.type === d1);
+        const filmRight = d2
+            ? filmsData.find(f => f.year === year && f.type === d2)
+            : null;
+
+        // Single mode: Fetch other films from same year
+        const otherFilms = (!d2)
+            ? filmsData.filter(f => f.year === year && f.type !== d1)
+            : [];
+
+        const episode = episodesData[year] || (isNow ? "THE PRESENT / AI ERA" : "");
+        row.innerHTML = `
+            <div class="side nolan-side">
+                ${filmLeft ? `
+                    <div class="film-card">
+                        <div class="card-content">
+                            <h2 class="film-title">
+                                <a href="https://www.google.com/search?q=${encodeURIComponent(filmLeft.title + ' ' + (directorsInfo[d1]?.fullNameEn || '') + ' movie')}" target="_blank" rel="noopener noreferrer">
+                                    ${filmLeft.title}
+                                </a>
+                            </h2>
+                            <p class="film-context">${filmLeft.context}</p>
+                        </div>
+                    </div>
+                ` : ''}
+            </div>
+
+            <div class="center-axis">
+                <div class="year-label">${year}</div>
+                <div class="episode-label">${episode || ''}</div>
+            </div>
+
+            <div class="side villeneuve-side">
+                ${filmRight ? `
+                    <div class="film-card">
+                        <div class="card-content">
+                            <h2 class="film-title">
+                                <a href="https://www.google.com/search?q=${encodeURIComponent(filmRight.title + ' ' + (directorsInfo[d2]?.fullNameEn || '') + ' movie')}" target="_blank" rel="noopener noreferrer">
+                                    ${filmRight.title}
+                                </a>
+                            </h2>
+                            <p class="film-context">${filmRight.context}</p>
+                        </div>
+                    </div>
+                ` : (otherFilms.length > 0 ? `
+                    <div class="other-films-container">
+                        ${otherFilms.map(f => `
+                            <div class="other-film-item" onclick="window.location.href='timeline.html?d1=${d1}&d2=${f.type}'">
+                                <span class="other-film-director">${directorsInfo[f.type].surname}</span>
+                                <span class="other-film-title">『${f.title}』</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : '')}
+            </div>
+        `;
+        container.appendChild(row);
+    }
+}
+renderTimeline();
