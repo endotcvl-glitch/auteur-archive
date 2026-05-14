@@ -29,7 +29,7 @@ const filmsData = [
     { year: 1960, type: 'kubrick', title: "スパルタカス", context: "古代ローマを舞台に、奴隷たちの反乱を壮大に描いた歴史大作。" },
     { year: 1962, type: 'kubrick', title: "ロリータ", context: "中年男性と少女の倒錯した愛を描いた、ナボコフの同名小説の映画化。" },
     { year: 1964, type: 'kubrick', title: "博士の異常な愛情", context: "核戦争を題材に、冷戦下の政治と狂気を皮肉ったブラックコメディ。" },
-    { year: 1968, type: 'kubrick', title: "2001年宇宙の旅", context: "人類の進化と宇宙の神秘を描いた、SF映画の金字塔。" },
+    { year: 1968, type: 'kubrick', title: "2001年宇宙の旅", context: "人類の進化と宇宙の神秘を描いた、SF映画의 金字塔。" },
     { year: 1971, type: 'kubrick', title: "時計じかけのオレンジ", context: "近未来を舞台に、暴力と洗脳をめぐる人間の本質を問う衝撃作。" },
     { year: 1975, type: 'kubrick', title: "バリー・リンドン", context: "18世紀のヨーロッパを舞台に、一人の男の成り上がりと没落を描いた歴史劇。" },
     { year: 1980, type: 'kubrick', title: "シャイニング", context: "雪山のホテルを舞台にした、恐怖の心理的描写が際立つホラー映画。" },
@@ -201,8 +201,8 @@ const filmsData = [
     { year: 2011, type: 'scorsese', title: "ヒューゴの不思議な発明", context: "映画の創成期へのオマージュを込めたファンタジー。" },
     { year: 2013, type: 'scorsese', title: "ウルフ・オブ・ウォールストリート", context: "狂乱の金、ドラッグ、飽くなき野心の喜劇。" },
     { year: 2016, type: 'scorsese', title: "沈黙 -サイレンス-", context: "隠れキリシタンの苦悩と、神の沈黙への問い。" },
-    { year: 2014, type: 'scorsese', title: "アイリッシュマン", context: "ある殺し屋の生涯と、アメリカの裏面史。" },
-    { year: 2023, type: 'scorsese', title: "キラーズ・オブ・ザ・フラワームーン", context: "オセージ族の悲劇と、アメリカের深い罪。" },
+    { year: 2019, type: 'scorsese', title: "アイリッシュマン", context: "ある殺し屋の生涯と、アメリカの裏面史。" },
+    { year: 2023, type: 'scorsese', title: "キラーズ・オブ・ザ・フラワームーン", context: "オセージ族の悲劇と、アメリカの深い罪。" },
 
     // Quentin Tarantino
     { year: 1992, type: 'tarantino', title: "レザボア・ドッグス", context: "強盗に失敗した男たちの、密室での心理戦と暴力。" },
@@ -227,7 +227,7 @@ const filmsData = [
     { year: 2010, type: 'fincher', title: "ソーシャル・ネットワーク", context: "Facebook誕生に隠された、友情と野心と孤独。" },
     { year: 2011, type: 'fincher', title: "ドラゴン・タトゥーの女", context: "寒冷なスウェーデンを舞台にした、凍てつく復讐譚。" },
     { year: 2014, type: 'fincher', title: "ゴーン・ガール", context: "完璧な夫婦の裏に潜む、戦慄のメディア戦と狂気。" },
-    { year: 2020, type: 'fincher', title: "MANK/マンク", context: "『市民ケーン』誕生の舞台裏. 白黒で描く黄金期への愛憎。" },
+    { year: 2020, type: 'fincher', title: "MANK/マンク", context: "『市民ケーン』誕生の舞台裏。白黒で描く黄金期への愛憎。" },
     { year: 2023, type: 'fincher', title: "ザ・キラー", context: "緻密で非情な殺し屋の、ストイックな復讐劇。" },
 
     // Wes Anderson
@@ -239,7 +239,7 @@ const filmsData = [
     { year: 2009, type: 'anderson', title: "ファンタスティック Mr.FOX", context: "初のストップモーションアニメ。野生の知恵と家族愛。" },
     { year: 2012, type: 'anderson', title: "ムーンライズ・キングダム", context: "島全体を巻き込む、12歳の小さな逃避行。" },
     { year: 2014, type: 'anderson', title: "グランド・ブダペスト・ホテル", context: "失われた古き良き時代を、精密な箱庭に閉じ込めて。" },
-    { year: 2018, type: 'anderson', title: "犬ヶ島", context: "日本へのオマージュ満載. ゴミの島での少年の冒険。" },
+    { year: 2018, type: 'anderson', title: "犬ヶ島", context: "日本へのオマージュ満載。ゴミの島での少年の冒険。" },
     { year: 2021, type: 'anderson', title: "フレンチ・ディスパッチ", context: "活字への愛が溢れる、動く短編小説集。" },
     { year: 2023, type: 'anderson', title: "アステロイド・シティ", context: "荒野の町で交差する、虚構と現実の迷宮。" },
 
@@ -254,6 +254,7 @@ const filmsData = [
     { year: 2008, type: 'bigelow', title: "ハート・ロッカー", context: "爆発物処理班の、生と死が隣り合わせの依存。" },
     { year: 2012, type: 'bigelow', title: "ゼロ・ダーク・サーティ", context: "ビンラディン追跡の、過酷で冷徹な10年間の執念。" },
     { year: 2017, type: 'bigelow', title: "デトロイト", context: "差別と暴力が爆発した、デトロイト暴動の真実。" },
+    { year: 2025, type: 'bigelow', title: "ハウス・オブ・ダイナマイト", context: "核ミサイル発射までの20分間を描く、リアルタイム・サスペンスの極致。" },
 
     // Greta Gerwig
     { year: 2017, type: 'gerwig', title: "レディ・バード", context: "誰もが経験する、故郷との決別と母への愛。" },
@@ -262,18 +263,18 @@ const filmsData = [
 
     // Damien Chazelle
     { year: 2009, type: 'chazelle', title: "ガイ・アンド・マデリン", context: "ヌーヴェルヴァーグへのオマージュを込めたジャズ・ミュージカル。" },
-    { year: 2014, type: 'chazelle', title: "セッション", context: "狂気的な指導者とドラマー. 魂を削るジャズの戦い。" },
-    { year: 2016, type: 'chazelle', title: "ラ・ラ・ランド", context: "夢を追う二人. 美しき色彩と、ビターな現実のミュージカル。" },
+    { year: 2014, type: 'chazelle', title: "セッション", context: "狂気的な指導者とドラマー。魂を削るジャズの戦い。" },
+    { year: 2016, type: 'chazelle', title: "ラ・ラ・ランド", context: "夢を追う二人。美しき色彩と、ビターな現実のミュージカル。" },
     { year: 2018, type: 'chazelle', title: "ファースト・マン", context: "月面着陸の裏にあった、一人の男の沈黙と死の影。" },
-    { year: 2022, type: 'chazelle', title: "バビロン", context: "サイレントからトーキーへ. 狂乱のハリウッドの黄金期。" },
+    { year: 2022, type: 'chazelle', title: "バビロン", context: "サイレントからトーキーへ。狂乱のハリウッドの黄金期。" },
 
     // Jordan Peele
     { year: 2017, type: 'peele', title: "ゲット・アウト", context: "人種差別の恐怖を、巧妙な伏線で描く新世代ホラー。" },
-    { year: 2019, type: 'peele', title: "アス", context: "自分自身が最大の敵. 鏡合わせの悪夢。" },
-    { year: 2022, type: 'peele', title: "NOPE/ノープ", context: "空を見上げてはいけない. 最悪の奇跡を目撃せよ。" },
+    { year: 2019, type: 'peele', title: "アス", context: "自分自身が最大の敵。鏡合わせの悪夢。" },
+    { year: 2022, type: 'peele', title: "NOPE/ノープ", context: "空を見上げてはいけない。最悪の奇跡を目撃せよ。" },
 
     // Ari Aster
-    { year: 2018, type: 'aster', title: "ヘレディタリー/継承", context: "逃れられない血脈の呪い. 家族の崩壊の極致。" },
+    { year: 2018, type: 'aster', title: "ヘレディタリー/継承", context: "逃れられない血脈の呪い。家族の崩壊の極致。" },
     { year: 2019, type: 'aster', title: "ミッドサマー", context: "白夜の村で繰り広げられる、美しき狂信の祝祭。" },
     { year: 2023, type: 'aster', title: "ボーはおそれている", context: "母親の元へ帰るだけの、壮大で悪夢のような旅。" }
 ];
