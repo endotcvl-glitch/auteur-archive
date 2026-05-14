@@ -475,6 +475,20 @@ header {
     letter-spacing: 0.1em;
 }
 
+.item-keywords {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-top: 0.3rem;
+    color: #888888;
+}
+
+.director-item.selected .item-keywords {
+    color: var(--bg-color);
+    opacity: 0.8;
+}
+
 
 .director-item.selected .item-index {
     opacity: 0.8;
