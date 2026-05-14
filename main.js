@@ -8,6 +8,10 @@ const directorsInfo = {
     'coen': { fullNameEn: 'JOEL & ETHAN COEN', nameJa: 'ジョエル＆イーサン・コーエン', surname: 'COENS' },
     'burton': { fullNameEn: 'TIM BURTON', nameJa: 'ティム・バートン', surname: 'BURTON' },
     'bigelow': { fullNameEn: 'KATHRYN BIGELOW', nameJa: 'キャスリン・ビグロー', surname: 'BIGELOW' },
+    'pta': { fullNameEn: 'PAUL THOMAS ANDERSON', nameJa: 'ポール・トーマス・アンダーソン', surname: 'PTA' },
+    'miller': { fullNameEn: 'GEORGE MILLER', nameJa: 'ジョージ・ミラー', surname: 'MILLER' },
+    'wright': { fullNameEn: 'EDGAR WRIGHT', nameJa: 'エドガー・ライト', surname: 'WRIGHT' },
+    'coogler': { fullNameEn: 'RYAN COOGLER', nameJa: 'ライアン・クーグラー', surname: 'COOGLER' },
     'fincher': { fullNameEn: 'DAVID FINCHER', nameJa: 'デイヴィッド・フィンチャー', surname: 'FINCHER' },
     'tarantino': { fullNameEn: 'QUENTIN TARANTINO', nameJa: 'クエンティン・タランティーノ', surname: 'TARANTINO' },
     'anderson': { fullNameEn: 'WES ANDERSON', nameJa: 'ウェス・アンダーソン', surname: 'ANDERSON' },
@@ -110,7 +114,7 @@ const filmsData = [
 
     // Christopher Nolan
     { year: 1998, type: 'nolan', title: "フォロウィング", context: "時間軸を解体する手法の原点。" },
-    { year: 2000, type: 'nolan', title: "メメント", context: "10分しか記憶が持たない男の逆行する時間。" },
+    { year: 2000, type: 'nolan', title: "メメント", context: "10分しか記憶が持たない男ের 逆行する時間。" },
     { year: 2002, type: 'nolan', title: "インソムニア", context: "不眠症に苛まれる刑事の倫理的境界。" },
     { year: 2005, type: 'nolan', title: "バットマン ビギンズ", context: "ヒーローを現実の恐怖と結びつける。" },
     { year: 2006, type: 'nolan', title: "プレステージ", context: "マジシャン同士の執念と自己犠牲。" },
@@ -197,7 +201,7 @@ const filmsData = [
     { year: 2006, type: 'scorsese', title: "ディパーテッド", context: "裏切りと欺瞞。ネズミたちのデスゲーム。" },
     { year: 2008, type: 'scorsese', title: "シャイン・ア・ライト", context: "ローリング・ストーンズのライブを極上の映像で捉える。" },
     { year: 2010, type: 'scorsese', title: "シャッター アイランド", context: "孤島の精神病院で消えた囚人。謎が謎を呼ぶスリラー。" },
-    { year: 2011, type: 'scorsese', title: "ジョージ・ハリスン/リヴィング・イン・ザ・マテリアル・ワールド", context: "ジョージの魂の遍歴を辿るドキュメンタリー。" },
+    { year: 2011, type: 'scorsese', title: "ジョージ・ハリスン/リヴィング・イン・ザ-マテリアル・ワールド", context: "ジョージの魂の遍歴を辿るドキュメンタリー。" },
     { year: 2011, type: 'scorsese', title: "ヒューゴの不思議な発明", context: "映画の創成期へのオマージュを込めたファンタジー。" },
     { year: 2013, type: 'scorsese', title: "ウルフ・オブ・ウォールストリート", context: "狂乱の金、ドラッグ、飽くなき野心の喜劇。" },
     { year: 2016, type: 'scorsese', title: "沈黙 -サイレンス-", context: "隠れキリシタンの苦悩と、神の沈黙への問い。" },
@@ -256,6 +260,49 @@ const filmsData = [
     { year: 2017, type: 'bigelow', title: "デトロイト", context: "差別と暴力が爆発した、デトロイト暴動の真実。" },
     { year: 2025, type: 'bigelow', title: "ハウス・オブ・ダイナマイト", context: "核ミサイル発射までの20分間を描く、リアルタイム・サスペンスの極致。" },
 
+    // Paul Thomas Anderson
+    { year: 1996, type: 'pta', title: "ハードエイト", context: "ベテラン博打打ちと青年の奇妙な師弟関係を描いたデビュー作。" },
+    { year: 1997, type: 'pta', title: "ブギーナイツ", context: "70-80年代ポルノ映画界の栄枯盛衰を群像劇として描く。" },
+    { year: 1999, type: 'pta', title: "マグノリア", context: "L.A.を舞台に、交錯する人々の運命を圧倒的熱量で描く。" },
+    { year: 2002, type: 'pta', title: "パンチドランク・ラブ", context: "孤独な男の不器用な愛を、鮮烈な色彩と音響で描く。" },
+    { year: 2007, type: 'pta', title: "ゼア・ウィル・ビー・ブラッド", context: "石油王の強欲と信仰の衝突を描いた、アメリカの叙事詩。" },
+    { year: 2012, type: 'pta', title: "ザ・マスター", context: "カリスマ的指導者と帰還兵の、魂の共鳴と反発。" },
+    { year: 2014, type: 'pta', title: "インヒアレント・ヴァイス", context: "ヒッピー文化の終焉。混迷を極めるサイケデリック・ミステリー。" },
+    { year: 2017, type: 'pta', title: "ファントム・スレッド", context: "完璧主義の仕立て屋と若きミューズ。究極の支配と愛。" },
+    { year: 2021, type: 'pta', title: "リコリス・ピザ", context: "1970年代サンフェルナンド・バレー。若さと恋の狂騒曲。" },
+    { year: 2025, type: 'pta', title: "One Battle After Another", context: "巨大な陰謀に巻き込まれた家族を描く、PTA史上最大の野心作。" },
+
+    // George Miller
+    { year: 1979, type: 'miller', title: "マッドマックス", context: "荒廃した近未来。家族を殺された警官の復讐劇。" },
+    { year: 1981, type: 'miller', title: "マッドマックス2", context: "カーアクションの歴史を変えた、バイオレンスSFの最高峰。" },
+    { year: 1983, type: 'miller', title: "トワイライトゾーン/超次元の体験", context: "第4話「2万フィートの戦慄」。飛行機の翼に潜む怪物を描く。" },
+    { year: 1985, type: 'miller', title: "マッドマックス/サンダードーム", context: "シリーズ第3作。文明崩壊後の都市での闘いを描く。" },
+    { year: 1987, type: 'miller', title: "イーストウィックの魔女たち", context: "3人の独身女性と、彼女らが呼び寄せた謎の男を巡るコメディ。" },
+    { year: 1992, type: 'miller', title: "ロレンツォのオイル/命の詩", context: "難病の息子を救うため、医学の常識に挑む両親の実話。" },
+    { year: 1998, type: 'miller', title: "ベイブ/都会へ行く", context: "都会へと迷い込んだ子ブタの冒険を描く、ダークなファンタジー。" },
+    { year: 2006, type: 'miller', title: "ハッピー フィート", context: "歌えないがダンスが得意なペンギンの、勇気ある冒険。" },
+    { year: 2011, type: 'miller', title: "ハッピー フィート2", context: "ペンギンたちの危機を救うべく、再びダンスで立ち上がる。" },
+    { year: 2015, type: 'miller', title: "マッドマックス 怒りのデス・ロード", context: "狂気の世界でのノンストップ・アクション。映画表現の新地平。" },
+    { year: 2022, type: 'miller', title: "アラビアンナイト 三千年の願い", context: "学者と魔人の対話を通じ、物語と欲望の正体を問う。" },
+    { year: 2024, type: 'miller', title: "マッドマックス：フュリオサ", context: "若きフュリオサの、怒りと復讐に満ちた原点の物語。" },
+
+    // Edgar Wright
+    { year: 1995, type: 'wright', title: "A Fistful of Fingers", context: "ライトの長編デビュー作。西部劇へのオマージュに満ちたコメディ。" },
+    { year: 2004, type: 'wright', title: "ショーン・オブ・ザ・デッド", context: "ゾンビと日常を融合させた、愛すべきゾンビ・コメディ。" },
+    { year: 2007, type: 'wright', title: "ホット・ファズ", context: "田舎町の平穏の裏に隠された陰謀を暴く、痛快ポリス・アクション。" },
+    { year: 2010, type: 'wright', title: "スコット・ピルグリム", context: "ゲーム的演出を駆使した、ポップで過激な青春ラブバトル。" },
+    { year: 2013, type: 'wright', title: "ワールズ・エンド", context: "故郷のバーを巡る男たちの、ビールとSF的陰謀の一夜。" },
+    { year: 2017, type: 'wright', title: "ベイビー・ドライバー", context: "音楽とカーアクションの完璧な同期。至福の没入体験。" },
+    { year: 2021, type: 'wright', title: "ラストナイト・イン・ソーホー", context: "60年代ロンドンへの憧れが、悪夢へと変貌するホラー。" },
+    { year: 2025, type: 'wright', title: "バトルランナー", context: "死のサバイバル番組に挑む男を描く、スリリングなリメイク作。" },
+
+    // Ryan Coogler
+    { year: 2013, type: 'coogler', title: "フルートベール駅で", context: "理不尽に命を奪われた青年の、最後の一日を克明に描く。" },
+    { year: 2015, type: 'coogler', title: "クリード チャンプを継る男", context: "『ロッキー』の魂を継承し、新たな伝説を創り出した傑作。" },
+    { year: 2018, type: 'coogler', title: "ブラックパンサー", context: "文化、アイデンティティ、正義を問う、MCUの金字塔。" },
+    { year: 2022, type: 'coogler', title: "ブラックパンサー/ワカンダ・フォーエバー", context: "喪失を乗り越え、国と伝統を守る者たちの闘い。" },
+    { year: 2025, type: 'coogler', title: "シナーズ", context: "1930年代アメリカ南部を舞台にした、漆黒のスーパーナチュラル・ホラー。" },
+
     // Greta Gerwig
     { year: 2017, type: 'gerwig', title: "レディ・バード", context: "誰もが経験する、故郷との決別と母への愛。" },
     { year: 2019, type: 'gerwig', title: "ストーリー・オブ・マイライフ", context: "時代に抗い、自らの筆で運命を切り拓く女性たち。" },
@@ -278,206 +325,3 @@ const filmsData = [
     { year: 2019, type: 'aster', title: "ミッドサマー", context: "白夜の村で繰り広げられる、美しき狂信の祝祭。" },
     { year: 2023, type: 'aster', title: "ボーはおそれている", context: "母親の元へ帰るだけの、壮大で悪夢のような旅。" }
 ];
-
-const episodesData = {
-    1954: "『ゴジラ』公開 特撮映画の金字塔",
-    1957: "スプートニク1号打ち上げ 宇宙時代の幕開け",
-    1961: "ガガーリン 世界初の有人宇宙飛行",
-    1963: "ケネディ大統領暗殺事件",
-    1964: "東京オリンピック開催",
-    1969: "アポロ11号月面着陸",
-    1973: "第1次オイルショック",
-    1975: "『ジョーズ』公開 ブロックバスター映画の誕生",
-    1977: "ILM設立 / 『スター・ウォーズ』公開",
-    1979: "ウォークマン発売",
-    1981: "MTV放送開始",
-    1985: "レンタルビデオ普及",
-    1986: "チェルノブイリ原発事故",
-    1989: "ベルリンの壁崩壊",
-    1991: "『ターミネーター2』公開 デジタル技術の躍進",
-    1993: "『ジュラシック・パーク』公開 CGIの衝撃",
-    1995: "インターネット普及開始",
-    1999: "『マトリックス』公開 映像表現の革命",
-    2001: "9.11同時多発テロ",
-    2005: "YouTubeスタート",
-    2007: "iPhone発売 / Netflix配信開始",
-    2008: "リーマン・ショック / MCUスタート",
-    2009: "『アバター』公開 3D映画の再定義",
-    2011: "東日本大震災",
-    2013: "Netflix自社制作開始",
-    2017: "#MeToo運動",
-    2020: "COVID-19パンデミック",
-    2022: "生成AIの爆発的普及",
-    2023: "ハリウッド大規模スト",
-    2024: "Apple Vision Pro発売"
-};
-
-function getUrlParams() {
-    const params = new URLSearchParams(window.location.search);
-    return {
-        d1: params.get('d1') || 'nolan',
-        d2: params.get('d2') || null // Allow null for single view
-    };
-}
-
-function updateHeaderLabels(d1Id, d2Id) {
-    const d1Info = directorsInfo[d1Id] || directorsInfo['nolan'];
-    const d2Info = d2Id ? directorsInfo[d2Id] : null;
-
-    const labels = document.querySelectorAll('.label');
-
-    // Left Label
-    labels[0].innerHTML = `<div class="label-en">${d1Info.fullNameEn}</div><div class="label-ja">${d1Info.nameJa}</div>`;
-
-    // Right Label
-    if (d2Info) {
-        labels[1].style.display = 'block';
-        labels[1].innerHTML = `<div class="label-en">${d2Info.fullNameEn}</div><div class="label-ja">${d2Info.nameJa}</div>`;
-    } else {
-        labels[1].style.display = 'block';
-        labels[1].innerHTML = `<div class="label-en">CONTEMPORARIES</div><div class="label-ja">同時代の作家たち</div>`;
-    }
-}
-
-function jumpTo(year) {
-    const el = document.getElementById(`year-${year}`);
-    if (el) {
-        const offset = 200; // Account for sticky header and jump-nav
-        const bodyRect = document.body.getBoundingClientRect().top;
-        const elementRect = el.getBoundingClientRect().top;
-        const elementPosition = elementRect - bodyRect;
-        const offsetPosition = elementPosition - offset;
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-        });
-    }
-}
-
-function renderTimeline() {
-    const { d1, d2 } = getUrlParams();
-    updateHeaderLabels(d1, d2);
-
-    const container = document.getElementById('timeline-container');
-    const labels = document.querySelector('.director-labels');
-    container.innerHTML = '';
-
-    // Handle single mode styling
-    if (!d2) {
-        container.classList.add('single-mode');
-        if (labels) labels.classList.add('single-mode');
-    } else {
-        container.classList.remove('single-mode');
-        if (labels) labels.classList.remove('single-mode');
-    }
-    // Calculate dynamic start year based on directors' debut
-    const d1Debut = filmsData.find(f => f.type === d1)?.year || 1953;
-    const d2Debut = d2 ? (filmsData.find(f => f.type === d2)?.year || Infinity) : Infinity;
-    const debutYear = Math.min(d1Debut, d2Debut);
-    
-    // Set start year to debut year, but not earlier than our absolute floor
-    const startYear = Math.max(1953, debutYear);
-    const endYear = 2025;
-    const currentYear = 2026; 
-
-    // Update jump nav visibility based on start year
-    document.querySelectorAll('.jump-nav button').forEach(btn => {
-        const jumpYear = parseInt(btn.getAttribute('onclick').match(/\d+/)[0]);
-        if (jumpYear < Math.floor(startYear / 10) * 10) {
-            btn.style.display = 'none';
-        } else {
-            btn.style.display = 'inline-block';
-        }
-    });
-
-    // Add 50s/60s buttons if needed
-    const jumpNav = document.querySelector('.jump-nav');
-    if (startYear < 1960 && !document.getElementById('jump-1950')) {
-        const btn50 = document.createElement('button');
-        btn50.id = 'jump-1950';
-        btn50.textContent = '50s';
-        btn50.onclick = () => jumpTo(1950);
-        jumpNav.prepend(btn50);
-    }
-    if (startYear < 1970 && !document.getElementById('jump-1960')) {
-        const btn60 = document.createElement('button');
-        btn60.id = 'jump-1960';
-        btn60.textContent = '60s';
-        btn60.onclick = () => jumpTo(1960);
-        // Insert after 50s if it exists
-        const btn50 = document.getElementById('jump-1950');
-        if (btn50) {
-            btn50.after(btn60);
-        } else {
-            jumpNav.prepend(btn60);
-        }
-    }
-
-    // Add future/now highlight
-    for (let year = startYear; year <= currentYear; year++) {
-        const row = document.createElement('div');
-        const isNow = year === currentYear;
-        row.className = `timeline-row ${isNow ? 'is-current' : ''}`;
-        row.id = `year-${year}`;
-
-        const filmLeft = filmsData.find(f => f.year === year && f.type === d1);
-        const filmRight = d2
-            ? filmsData.find(f => f.year === year && f.type === d2)
-            : null;
-
-        // Single mode: Fetch other films from same year
-        const otherFilms = (!d2)
-            ? filmsData.filter(f => f.year === year && f.type !== d1)
-            : [];
-
-        const episode = episodesData[year] || (isNow ? "THE PRESENT / AI ERA" : "");
-        row.innerHTML = `
-            <div class="side nolan-side">
-                ${filmLeft ? `
-                    <div class="film-card">
-                        <div class="card-content">
-                            <h2 class="film-title">
-                                <a href="https://www.google.com/search?q=${encodeURIComponent(filmLeft.title + ' ' + directorsInfo[d1].fullNameEn + ' movie')}" target="_blank" rel="noopener noreferrer">
-                                    ${filmLeft.title}
-                                </a>
-                            </h2>
-                            <p class="film-context">${filmLeft.context}</p>
-                        </div>
-                    </div>
-                ` : ''}
-            </div>
-
-            <div class="center-axis">
-                <div class="year-label">${year}</div>
-                <div class="episode-label">${episode || ''}</div>
-            </div>
-
-            <div class="side villeneuve-side">
-                ${filmRight ? `
-                    <div class="film-card">
-                        <div class="card-content">
-                            <h2 class="film-title">
-                                <a href="https://www.google.com/search?q=${encodeURIComponent(filmRight.title + ' ' + directorsInfo[d2].fullNameEn + ' movie')}" target="_blank" rel="noopener noreferrer">
-                                    ${filmRight.title}
-                                </a>
-                            </h2>
-                            <p class="film-context">${filmRight.context}</p>
-                        </div>
-                    </div>
-                ` : (otherFilms.length > 0 ? `
-                    <div class="other-films-container">
-                        ${otherFilms.map(f => `
-                            <div class="other-film-item" onclick="window.location.href='timeline.html?d1=${d1}&d2=${f.type}'">
-                                <span class="other-film-director">${directorsInfo[f.type].surname}</span>
-                                <span class="other-film-title">『${f.title}』</span>
-                            </div>
-                        `).join('')}
-                    </div>
-                ` : '')}
-            </div>
-        `;
-        container.appendChild(row);
-    }
-}
-renderTimeline();
